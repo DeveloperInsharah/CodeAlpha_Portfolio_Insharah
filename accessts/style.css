@@ -1,0 +1,595 @@
+:root{
+    --dcyan:#103535
+}
+@font-face {
+    font-family: "my";
+    src: url(../accessts/font/font/target.otf);
+}
+
+body{
+    transition: background-color ease-out .5s;
+}
+
+body::-webkit-scrollbar{
+    padding: 5px !important;
+    width: 10px;
+
+}
+
+body::-webkit-scrollbar-thumb{
+    background:rgb(78, 78, 78);
+    width: 5px !important;
+    height: 70px;
+}
+
+.bgcyan{
+    background-color: grey;
+}
+
+body[theme="black"]{
+    background-color: black ;
+}
+
+body[theme="black"] .section {
+    color: white;
+}
+
+body[theme="salmon"]{
+    background-color: rgb(241, 191, 185);
+}
+
+body[theme="salmon"]  .section{
+    color: rgb(58, 15, 10);
+}
+
+body[theme="cyan"]{
+    background-color: rgb(130, 196, 196);
+}
+
+body[theme="cyan"] .section{
+    color: #092c2c;
+}
+
+body[theme="white"]{
+    background-color: white !important;
+}
+
+body[theme="white"] .section{
+    color: black !important;
+}
+
+.vdodiv{
+    clip-path: circle(var(--clip) at 57% 57%);
+}
+
+*{
+    font-family: "my", monospace;
+}
+
+.regular{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.heading>h1{
+    width: 65% !important;
+}
+
+.vdodiv ::selection{
+    background-color: rgba(255, 255, 255, 0.377) !important;
+    color: black !important;
+    -webkit-text-stroke: 1px black !important;
+}
+*::selection{
+    background-color: #EF9D71;
+}
+
+.video{
+   transform: scale(2);
+}
+
+.imgdiv{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: right;
+    overflow: hidden;
+}
+
+.h{
+    color: black;
+    width: 70%;
+}
+
+.w-60{
+    width: 220px !important;
+}
+
+.p>.absolute{
+    transition: 1s;
+}
+
+.p:hover .absolute{
+   transform: translateY(0%) !important;
+}
+
+.p{
+    cursor: pointer;
+}
+
+.picture{
+    transition: 0.6s;
+}
+
+.list-elem{
+    cursor: pointer;
+}
+
+.list-elem:hover .picture{
+    opacity: 1 !important;
+    transform: translateY(-40%) !important;
+}
+.bluelayer{
+    transition: 0.6s;
+}
+
+.list-elem:hover .bluelayer{
+    height: 100%;
+}
+
+.mypic{
+    box-shadow: -2px 2px 10px 10px rgba(255, 255, 255, 0.26);
+}
+
+.myimage{
+    box-shadow: -2px 2px 50px 50px rgb(255, 255, 255);
+    transition: 1s;
+}
+
+.tr{
+    -webkit-text-stroke: 1px rgb(240, 240, 240);
+    color: transparent;
+}
+
+.g{
+    -webkit-text-stroke: 0.2px rgb(70, 70, 70);
+    color: rgb(70, 70, 70) !important;
+}
+
+.menu{
+    transition: 0.6s;
+}
+
+.menu:hover{
+    cursor: pointer;
+    box-shadow: 2px 2px 10px 10px rgba(255, 255, 255, 0.685);
+}
+
+.under{
+    cursor: pointer;
+}
+
+.under::after{
+    content: "";
+    width: 110%;
+    height: 4px;
+    position: absolute;
+    background-color: white;
+    left: -5px;
+    bottom: -2px;
+}
+
+.under:hover::after{
+    background-color: rgb(51, 51, 51);
+}
+
+.under:hover{
+    color: white !important;
+    transition: 0.6s;
+}
+.mainn{
+    display: none;
+}
+.w-fit{
+    transition: 0.8s;
+}
+.w-fit:hover{
+    border: 3px solid black !important;
+}
+.w-fit a span{
+    transition: 0.8s;
+}
+.w-fit a span:hover{
+    font-weight: 700 !important;
+}
+.contact{
+    height: 80vh !important;
+}
+.contact-div .icon>div{
+    box-shadow: 2px 2px 5px 5px rgb(110, 172, 172);
+    transition: 0.6s;
+}
+.contact-div>div{
+    transition: 0.3s;
+}
+.contact-div>div:hover{
+    margin-top: -40px !important;
+}
+.contact-div>div:hover .icon>div{
+    background-color:  #092c2c;
+    border: none !important;
+    box-shadow: 2px 2px 15px 15px rgb(167, 241, 241);
+}
+.contact-div>div:hover .icon>div>i{
+    color: rgb(110, 172, 172) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width : 1161px){
+    .res-text{
+        font-size: 4rem !important;
+    }
+}
+
+@media (max-width : 1038px){
+   .responsive{
+    padding-left: 20% !important;
+    padding-right: 20% !important;
+   }
+}
+
+@media (max-width : 985px){
+    #project .left{
+        width: 100% !important;
+        padding: 50px !important;
+        text-align: center !important;
+        position: relative !important;
+    }
+    #project .right{
+        width: 100% !important;
+        padding: 0px !important;
+        gap: 50px !important;
+    }
+    #project{
+        flex-direction: column !important;
+        padding: 0%;
+    }
+    .btnm{
+        margin-left: 30% !important;
+        padding: 10px !important;
+    }
+    .p{
+        margin: 0% !important;
+        width: 100% !important;
+        height: 20rem !important;
+        box-shadow: 2px 2px 20px 20px rgba(128, 128, 128, 0.26);
+    }
+    .hs-res{
+        top: -30% !important;
+    }
+    .img00{
+        display: none !important;
+    }
+    .css{
+        right: 50% !important;
+    }
+    #teacher .regular h1{
+        font-size: 2rem !important;
+        font-weight: 500 !important;
+    }
+    #teacher .regular h3.text-5xl{
+        font-size: 1.6rem !important;
+    }
+    #teacher .regular h3.text-2xl{
+        font-size: 0.9rem !important;
+    }
+}
+
+@media (max-width : 914px){
+    .w-responsive{
+        flex-direction: column;
+    }
+    .intor{
+        height: 40% !important;
+        width: 100% !important;
+        padding: 0px !important;
+    }
+    .tr{
+        display: inline;
+    }
+    #element{
+        display: inline;
+        padding-left: 20px;
+    }
+    .mypic{
+        width: 30% !important;
+        height: 110% !important;
+    }
+    .myimage{
+        display: none;
+    }
+    .rii{
+        padding-top: 50px !important;
+        height: 45% !important;
+    }
+}
+
+@media (max-width : 853px){
+    .contact-div{
+        flex-direction: column !important;
+        height: 130vh !important;
+    }
+}
+
+@media (max-width : 833px){
+    .res-text{
+        font-size: 3rem !important;
+    }
+    .im1{
+        transform: scale(0.8) !important;
+    }
+    .hs-res{
+        text-align: center !important;
+        left: -100px !important;
+    }
+    .sk{
+        font-size: 5rem !important;
+    }
+    .tex{
+        font-size: 1.5rem !important;
+    }
+    .set{
+        left: -100px !important;
+    }
+    .ggg{
+        left: -1% !important;
+    }
+    .ggg .hs-res{
+        left: 0px !important;
+    }
+}
+
+@media (max-width : 794px){
+    .rii{
+        padding-top: 50px !important;
+        height: 50% !important;
+        justify-content: end !important;
+    }
+    .responsive{
+        padding-left: 10% !important;
+        padding-right: 10% !important;
+    }
+}
+
+@media (max-width : 745px){
+    .teach{
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width : 710px){
+    .hs-res{
+        left: 30px !important;
+        width: 45% !important;
+        top: -20% !important;
+        font-size: 0.9rem !important;
+        text-align: left !important;
+    }
+    .set{
+        left: 0px !important;
+    }
+    .immm{
+        transform: scale(0.8) !important;
+        top: 70% !important;
+    }
+    .vvv{
+        transform: scale(0.8) !important;
+        top: 25% !important;
+        right: -16% !important;
+    }
+}
+
+@media (max-width : 690px){
+    .im1{
+        transform: scale(0.6) !important;
+        right: -140px !important;
+    }
+    .res-text{
+        font-size: 2rem !important;
+    }
+    .tag{
+        transform: scale(0.8) !important;
+    }
+    #teacher .left{
+        gap: 20px !important;
+    }
+}
+
+@media (max-width : 670px){
+    .heading>h1{
+        width: 100% !important;
+    }
+    .slidesm .ff{
+        font-size: 3rem !important;
+    }
+    .contact h1{
+        font-size: 3rem !important;
+    }
+}
+
+@media (max-width : 653px){
+    .js{
+        top: 20% !important;
+    }
+    #teacher .regular h1{
+        font-size: 1.5rem !important;
+    }
+    #teacher .regular h3.text-5xl{
+        font-size: 1.2rem !important;
+    }
+    #teacher .regular h3.text-2xl{
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width : 585px){
+    .ss{
+        font-size: 3rem !important;
+    }
+    .ggg{
+        top: 90px !important;
+    }
+    .responsive{
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+    }
+    .ggg .hs-res{
+        top: -10px !important;
+    }
+    .HTML{
+        transform: scale(0.8) !important;
+        top: 0% !important;
+    }
+    .js{
+        top: 80% !important;
+    }
+    .tag{
+        top: -3% !important;
+        left: 70% !important;
+        transform: scale(0.5) !important;
+    }
+    .css{
+        right: 150px !important;
+        bottom: 45% !important;
+    }
+}
+
+@media (max-width : 525px){
+    .hs-res{
+        font-size: 0.8rem !important;
+        top: -50% !important;
+    }
+    .sk{
+        font-size: 3rem !important;
+    }
+    .tex{
+        font-size: 1.2rem !important;
+    }
+    .vvv{
+        right: -20% !important;
+    }
+}
+
+@media (max-width : 518px){
+    .w-responsive{
+        width: 100% !important;
+    }
+    .intor>h1{
+        font-size: 2rem !important;
+    }
+    .intor .tr,#element{
+        font-size: 2.5rem;
+    }
+    .ttt{
+        font-size: 3rem !important;
+    }
+    .btnm{
+        margin-left: 20% !important;
+    }
+    #teacher .regular h1{
+        font-size: 1.3rem !important;
+    }
+}
+
+@media (max-width : 517px){
+    .jkul{
+        right: 50% !important;
+    }
+    .vvv{
+        right: -30% !important;
+    }
+}
+
+@media (max-width : 481px){
+    #teacher .list{
+        padding: 8px !important;
+    }
+}
+
+@media (max-width : 474px){
+    .w-responsive{
+        width: 100% !important;
+    }
+}
+
+@media (max-width : 460px){
+    .responsive{
+        padding-left: 2% !important;
+        padding-right: 2% !important;
+        font-size: 0.8rem !important;
+    }
+    .under{
+        font-size: 1rem !important;
+    }
+    .w-responsive{
+        padding: 20px !important;
+    }
+}
+
+@media (max-width : 425px){
+    #teacher .regular .relative{
+        padding: 5px !important;
+    }
+    #teacher .regular{
+        padding-left: 3px !important;
+        padding-right: 3px !important;
+    }
+    .contact h1{
+        font-size: 2rem !important;
+    }
+}
+
+@media (max-width : 393px){
+    .mypic{
+        width: 40% !important;
+    }
+    .heading{
+        width: 100%;
+    }
+    .left>p{
+        text-align: center !important;
+    }
+    .p{
+        height: 12rem !important;
+        width: 90% !important;
+        margin-left: 5% !important;
+    }
+}
+
+@media (max-width : 373px){
+    .rii{
+        padding: 0% !important;
+        align-items: end;
+        padding-bottom: 20px !important;
+    }
+    .rii .mypic{
+        height: 50% !important;
+    }
+    .btnm{
+        margin-left: 10% !important;
+    }
+    .right{
+        padding-bottom: 50px !important;
+    }
+}
+
+
