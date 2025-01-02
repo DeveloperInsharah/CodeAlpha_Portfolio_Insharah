@@ -573,9 +573,6 @@ body[theme="white"] .section{
         width: 90% !important;
         margin-left: 5% !important;
     }
-    .ggg .hs-res{
-        margin-top : -2% !important;
-    }
 }
 
 @media (max-width : 373px){
@@ -592,6 +589,9 @@ body[theme="white"] .section{
     }
     .right{
         padding-bottom: 50px !important;
+    }
+  .ggg .hs-res{
+        margin-top : -2% !important;
     }
 }
 
