@@ -593,6 +593,9 @@ body[theme="white"] .section{
   .ggg .hs-res{
         margin-top : -2% !important;
     }
+    .nav{
+        display : none !important;
+    }
 }
 
 
