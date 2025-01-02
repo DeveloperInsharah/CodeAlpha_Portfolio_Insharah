@@ -1,5 +1,4 @@
 <h1>Hy! 👋🏻 I am Insharah Developer 🙂</h1>
-<h2>That is my <b>Portfolio </b>b></h2>
 
 # 🌟 Portfolio Website  
 
